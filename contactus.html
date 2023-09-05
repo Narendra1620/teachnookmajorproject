@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" data-theme="#fff">
+		<title>major project</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<div class="container div-class">
+				<h1 class="brandfont"><a href="#" class="navbar-brand ">Narendra</a></h1>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#mynav" >
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mynav">
+					<ul class="navbar-nav ml-auto text-center">
+						<li class="nav-item"><a class="nav-link active" href="index.html" target="_blank">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About us</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Services</a>
+							<ul class="dropdown-menu">
+								<h5 class="dropdown-header">service section</h5>
+								<a href="#service"  class="dropdown-item">service1</a>
+								<a href="#service" class="dropdown-item">service2</a>
+								<a href="#service" class="dropdown-item">service3</a>
+								<div class="dropdown-divider"></div>
+								<h5 class="dropdown-header">more services</h5>
+								<a href="#service" class="dropdown-item">service4</a>
+								<a href="#service"class="dropdown-item">service5</a>
+								<a href="#service" class="dropdown-item">service6</a>
+								</ul>
+
+						</li>
+					
+						<li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+<br><br><br><br>
+
+
+<div class="container45">
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <h3 style="text-align: center;">Fill form for query</h3>
+        <input type="text" id="name" placeholder="your Name" required>
+        <input type="email" id="email" placeholder="emailid" required>
+        <input type="text" id="phone" placeholder="phone no" required>
+        <textarea  id="messege" cols="30" rows="4" placeholder="How can we help you"></textarea>
+        <button type="submit">Send</button>
+
+    </form>
+</div>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4 style="color: white; ">company</h4>
+                        <ul>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">our services</a></li>
+                            <li><a href="">privacy policy</a></li>
+                            <li><a href="">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 style="color: white; " >get help</h4>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">order status</a></li>
+                            <li><a href="">payment options</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 style="color: white; ">follow us</h4>
+
+                        <div  class="social-links">
+                            <a href="https://www.facebook.com/talapaneni.talapaneninarendra?mibextid=avESrC"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/Narendr99496258?t=PHsLojg03Q7UIBhd-lWMqw&s=09"><i class="fab fa-twitter"> </i></a>
+                            <a href="https://instagram.com/narendra_chowdary47?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/narendra-thalapaneni-01a1a0225fff "><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "thalapaneninarendra@gmail.com",
+                    Password : "BA9F2F1C8C7804E0337D0003C0162A9C5785",
+                    To : 'thalapaneninarendra@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "new contact form enquiry",
+                    Body : "Name: "+document.getElementById("name").value
+                    +"<br> Email: "+document.getElementById("email").value
+                    + "<br> phone no: "+document.getElementById("phone").value
+                    +"< br> Messege: "+document.getElementById("messege").value
+                }).then(
+                message => alert("Messege Sent Succesfully")
+                );
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['<i>welcome to</i> ', '&amp;trading education.'],
+        typeSpeed: 50,
+        });
+    </script>
+</body>
+</body>
+</html>
